@@ -15,7 +15,11 @@
 */
 
 //Code here
-
+var me = {
+  name:"Zoltan",
+  age:20
+}
+me.name
 
 
 ////////// PROBLEM 2 //////////
@@ -26,7 +30,14 @@
 */
 
 //Code here
-
+var favoriteThings = {
+  band:"Depeche Mode",
+  food:"Bundas Kenyer",
+  person:"Wubby",
+  book:"The Way of Kings",
+  movie:"Interstellar",
+  holiday:"Christmas"
+}
 
 
 /*
@@ -34,6 +45,8 @@
 */
 
 //Code here
+favoriteThings.car ="Barracuda";
+favoriteThings.brand ="Sony";
 
 
 
@@ -42,8 +55,8 @@
 */
 
 //Code here
-
-
+favoriteThings.food ="Chicken Nuggets";
+favoriteThings.book ="Harry Potter"
 
 ////////// PROBLEM 3 //////////
 
@@ -56,14 +69,17 @@
 */
 
 //Code here
-
-
+var backPack = {};
+var item = "firstPocket";
+backPack[item]="chapstick";
+backPack.color="Blue"
 
 /*
   After you do the above, alert your entire backPack object.
 */
 
 //Code here
+alert(backPack)
 
 
 
@@ -74,7 +90,7 @@ Instead, console.log your whole backPack object and then check out the console.
 */
 
 //Code here
-
+console.log(backPack);
 
 
 ////////// PROBLEM 4 //////////
@@ -97,8 +113,8 @@ var user2 = {
 */
 
 //Code Here
-
-
+user2.name = "Tyler S. McGinnis";
+user2.email = "tyler.mcginnis@devmounta.in";
 
 
 
@@ -120,7 +136,7 @@ var user2 = {
 */
 
 //Code Here
-
+var methodCollection = {};
 
 
 /*
@@ -129,16 +145,16 @@ var user2 = {
 */
 
 //Code Here
-
-
+methodCollection.alertHello = function(){alert("hello")}
+methodCollection.logHello = function(){console.log("hello")}
 
 /*
   Now call your alertHello and logHello methods.
 */
 
 //Code Here
-
-
+methodCollection.alertHello()
+methodCollection.logHello()
 
 ////////// PROBLEM 6 //////////
 
@@ -148,7 +164,13 @@ var user2 = {
 */
 
 //Code Here
-
+var makePerson = (name,birthday,ssn) =>{
+  return person ={
+    name: name,
+    birthday: birthday,
+    ssn: ssn
+  }
+}
 
 
 ////////// PROBLEM 7 //////////
@@ -159,5 +181,11 @@ var user2 = {
 */
 
 //Code Here
-
+var makeCard= (cardNumber,expirationDate,securityCode) =>{
+  return card = {
+    cardNumber: cardNumber,
+    expirationDate:expirationDate,
+    securityCode:securityCode
+  }
+}
 
